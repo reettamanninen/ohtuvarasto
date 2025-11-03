@@ -5,6 +5,10 @@ description = ""
 authors = ["Matti Luukkainen"]
 readme = "README.md"
 
+packages = [
+    { include = "varasto", from = "src" }
+]
+
 [tool.poetry.dependencies]
 python = "^3.10"
 
