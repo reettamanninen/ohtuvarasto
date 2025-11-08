@@ -55,7 +55,6 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(otettu, 5)
         self.assertAlmostEqual(self.varasto.saldo, 0)
 
-    
     def test_lisaa_negatiivinen(self):
         self.varasto.lisaa_varastoon(-5)
         self.assertAlmostEqual(self.varasto.saldo, 0)
