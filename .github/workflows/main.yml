@@ -20,6 +20,10 @@ jobs:
         run: pip install poetry
       - name: Install dependencies
         run: poetry install
+      - name: Run Pylint
+        run: |
+          poetry run pip install pylint
+          poetry run pylint **/*.py
       - name: Run tests
         run: poetry run coverage run --branch -m pytest
       - name: Coverage report
